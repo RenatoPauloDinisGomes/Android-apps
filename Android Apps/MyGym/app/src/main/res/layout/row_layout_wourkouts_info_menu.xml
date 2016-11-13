@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/iv_typeWorkout_row_menu_workout_info"
+            android:src="@drawable/green_marker"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_row_menu_workout_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="3dp"
+            android:text="Medium Text"
+            android:textColor="@android:color/black" />
+    </TableRow>
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gomes.renato.blackjackv11.MainActivity"
+    android:background="@drawable/casino"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dealer Hand"
+            android:id="@+id/tvDealerhand"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:textIsSelectable="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/ivDealer2"
+            android:layout_alignStart="@+id/ivDealer2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Hand"
+            android:id="@+id/textView"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:textIsSelectable="false"
+            android:layout_marginRight="98dp"
+            android:layout_marginEnd="98dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:id="@+id/ivDealer1"
+            android:src="@drawable/cardback"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:id="@+id/ivDealer2"
+            android:src="@drawable/cardback"
+            android:layout_alignTop="@+id/ivDealer1"
+            android:layout_toRightOf="@+id/ivDealer1"
+            android:layout_toEndOf="@+id/ivDealer1"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:id="@+id/ivDealer3"
+            android:src="@drawable/cardback"
+            android:layout_alignTop="@+id/ivDealer2"
+            android:layout_toRightOf="@+id/ivDealer2"
+            android:layout_toEndOf="@+id/ivDealer2"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:id="@+id/ivDealer4"
+            android:src="@drawable/cardback"
+            android:layout_alignTop="@+id/ivDealer3"
+            android:layout_toRightOf="@+id/ivDealer3"
+            android:layout_toEndOf="@+id/ivDealer3"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:id="@+id/ivPlayer1"
+            android:src="@drawable/cardback"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ivPlayer2"
+            />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:id="@+id/ivPlayer2"
+            android:src="@drawable/cardback"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ivPlayer3"
+            android:layout_toStartOf="@+id/ivPlayer3"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:id="@+id/ivPlayer3"
+            android:src="@drawable/cardback"
+            android:layout_alignTop="@+id/ivPlayer4"
+            android:layout_toLeftOf="@+id/ivPlayer4"
+            android:layout_toStartOf="@+id/ivPlayer4"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:id="@+id/ivPlayer4"
+            android:src="@drawable/cardback"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card"
+            android:id="@+id/btnCard"
+            android:layout_alignTop="@+id/btnOk"
+            android:layout_toLeftOf="@+id/btnOk"
+            android:layout_toStartOf="@+id/btnOk"
+            android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Split"
+            android:id="@+id/btnSplit"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnOk"
+            android:layout_toEndOf="@+id/btnOk"
+            android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:id="@+id/btnOk"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:id="@+id/btnPlay"
+            android:layout_alignBaseline="@+id/btnSplit"
+            android:layout_alignBottom="@+id/btnSplit"
+            android:layout_toLeftOf="@+id/btnSplit"
+            android:layout_toStartOf="@+id/btnSplit"/>
+    </RelativeLayout>
+</LinearLayout>

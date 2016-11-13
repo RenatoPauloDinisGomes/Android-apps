@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App001</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="Tapme">Tap me!</string>
+    <string name="texto001">Oi App001 versão 2</string>
+</resources>
